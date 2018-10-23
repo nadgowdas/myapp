@@ -1,4 +1,3 @@
-# simple-app [![Secure Build Status](http://9.47.224.46:8080/passing.svg)](http://9.47.224.46:8080/passing.svg)
-![Build Status](https://travis-ci.org/cloudviz/agentless-system-crawler.svg)
-![Secure Build Status](http://9.47.224.46:8080/agentless-system-crawler.svg)
+# simple-app
+[![Secure Build Status1](https://9.47.224.46:8443/badge.svg)](http://9.47.224.46:8080/badge.svg)
 One always need a simple app
