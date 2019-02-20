@@ -1,4 +1,4 @@
-FROM golang:1.10.1
+FROM golang:1.10.0-alpine3.7
 RUN apk add --update --no-cache alpine-sdk bash ca-certificates docker\
       libressl \
       iproute2 dumb-init fuse \
