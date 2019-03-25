@@ -6,7 +6,6 @@ RUN apk add --update --no-cache alpine-sdk bash ca-certificates docker\
    
 #RUN pip install -r requirement.txt
 RUN pip install pytz requests elasticsearch elasticsearch-dsl
-
 WORKDIR /go/src/github.com/mchmarny/simple-app/
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -v -o app
