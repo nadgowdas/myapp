@@ -1,6 +1,5 @@
 FROM golang:1.10.0-alpine3.7
 RUN apk add --update --no-cache alpine-sdk bash ca-certificates docker\
-      libressl \
       iproute2 dumb-init fuse \
       git openssh openssl yajl-dev zlib-dev cyrus-sasl-dev openssl-dev build-base coreutils
 
