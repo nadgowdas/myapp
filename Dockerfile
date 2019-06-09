@@ -5,7 +5,7 @@ RUN apk add --update --no-cache alpine-sdk bash ca-certificates docker\
 
 #RUN pip install -r requirement.txt
 #RUN pip install pytz requests elasticsearch elasticsearch-dsl django==1.2
-RUN pip install pytz django==1.2
+RUN pip install pytz django
 WORKDIR /go/src/github.com/mchmarny/simple-app/
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -v -o app
