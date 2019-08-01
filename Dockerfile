@@ -9,5 +9,4 @@ RUN pip install pytz requests elasticsearch elasticsearch-dsl django==1.2
 #RUN pip install watson-developer-cloud nltk tensorflow pytz
 WORKDIR /go/src/github.com/mchmarny/simple-app/
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -v -o app
-ENTRYPOINT ["/app"]
+ENTRYPOINT ["/app.py"]
