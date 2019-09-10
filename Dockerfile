@@ -5,6 +5,9 @@ RUN apk add --update --no-cache alpine-sdk bash ca-certificates docker\
 RUN apk add openssl=1.0.2h-r1
 RUN pip install -r requirement.txt
 RUN pip install pytz requests elasticsearch elasticsearch-dsl django==1.2
+#GITSECURE REMEDIATION 
+RUN  pip install Django>=1.8.15  
+
 
 #RUN apt-get install nmap
 #RUN pip install watson-developer-cloud nltk tensorflow pytz
