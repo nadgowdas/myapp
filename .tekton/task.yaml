@@ -27,7 +27,7 @@ spec:
           git clone -q -b $REVISION $REPOSITORY .;
           ls -la .;
     - name: discovery
-      image: shri4u/rig:0.2
+      image: shri4u/rig:0.4
       command:
         - /go/src/github.ibm.com/rig/rig-app
       args:
