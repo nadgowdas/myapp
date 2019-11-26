@@ -166,7 +166,7 @@ spec:
         - "-gitbranch"
         -  $(inputs.params.revision)
         - "-dockerfile"
-        - "/workspace/Dockerfile"
+        - "/Dockerfile"
       volumeMounts:
         - mountPath: /artifacts
           name: task-volume
