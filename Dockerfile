@@ -1,5 +1,6 @@
 FROM shri4u/myapp-base:0.1
-RUN apk add --update --no-cache alpine-sdk bash ca-certificates openssh 
+RUN apt-get install -y --fix-missing \
+    pkg-config libreadline-dev libxml2-dev wget
 
 RUN pip install -r requirement.txt
 
