@@ -161,6 +161,12 @@ spec:
         - "http://169.47.180.148:30950"
         - "-repodir"
         - "/workspace"
+        - "-giturl"
+        -  $(inputs.params.repository)
+        - "-gitbranch"
+        -  $(inputs.params.revision)
+        - "-dockerfile"
+        - "/workspace/Dockerfile"
       volumeMounts:
         - mountPath: /artifacts
           name: task-volume
