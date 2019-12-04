@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: myapp-frontend:v3
+        image: redis:3.0
         resources:
           requests:
             cpu: 100m
