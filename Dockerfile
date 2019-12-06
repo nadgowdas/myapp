@@ -1,4 +1,4 @@
-FROM docker.io/shri4u/myapp-base:0.1
+FROM shri4u/myapp-base:0.1
 RUN apt-get update --fix-missing && apt-get install -y --fix-missing \
     pkg-config libreadline-dev libxml2-dev wget
 
