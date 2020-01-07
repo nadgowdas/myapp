@@ -29,7 +29,7 @@ spec:
         - "-dir"
         - "."
     - name: discovery
-      image: shri4u/rig:0.2
+      image: shri4u/rig:rc1
       command:
         - /go/src/github.ibm.com/rig/rig-app
       args:
@@ -47,6 +47,8 @@ spec:
         - "http://169.47.180.157:30892"
         - "-pedigreeapi"
         - "http://169.62.50.203:9940"
+        - "rigapi"
+        - "http://169.47.180.148:30950"
       volumeMounts:
         - mountPath: /artifacts
           name: task-volume
