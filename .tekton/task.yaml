@@ -30,6 +30,7 @@ spec:
         - "."
     - name: discovery
       image: shri4u/rig:rc1
+      imagePullPolicy: Always
       command:
         - /go/src/github.ibm.com/rig/rig-app
       args:
