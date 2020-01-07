@@ -321,7 +321,7 @@ spec:
           echo "Cloning $REPOSITORY";
           git clone -q -b $REVISION $REPOSITORY .;
     - name: deploy-analytics
-      image: rofrano/deployment-checker
+      image: cmadam/deployment-checker:rc1
       imagePullPolicy: Always
       args:
         - "--giturl"
