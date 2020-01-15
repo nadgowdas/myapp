@@ -217,7 +217,7 @@ spec:
         description: the ibmcloud api key
   steps:
     - name: ossc
-      image: cmadam/ossc-toolchain
+      image: cmadam/ossc-toolchain:rc1
       imagePullPolicy: Always
       command:
         - "python"
