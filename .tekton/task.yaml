@@ -312,17 +312,18 @@ spec:
         description: the ibmcloud api key
   steps:
     - name: clone-repo
-      image: alpine/git
-      env:
-        - name: REPOSITORY
-          value: $(inputs.params.repository)
-        - name: REVISION
-          value: $(inputs.params.revision)
-      command: ["/bin/sh", "-c"]
+      image: shri4u/git-cloner
+      imagePullPolicy: Always
+      command: ["/gitsecure/git-cloner"]
       args:
-        - set -e -o pipefail;
-          echo "Cloning $REPOSITORY";
-          git clone -q -b $REVISION $REPOSITORY .;
+        - "-apikey"
+        - "$(inputs.params.apikey)"
+        - "-giturl"
+        - "$(inputs.params.repository)"
+        - "-gitbranch"
+        - "$(inputs.params.revision)"
+        - "-dir"
+        - "."
     - name: deploy-analytics
       image: cmadam/deployment-checker:rc1
       imagePullPolicy: Always
