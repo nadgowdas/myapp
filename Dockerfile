@@ -9,3 +9,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 WORKDIR /go/src/github.com/simple-app/
 COPY . .
 ENTRYPOINT ["/app.py"]
+
+# Demo Gitsecure
